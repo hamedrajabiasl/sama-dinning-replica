@@ -6,8 +6,10 @@
 html {
     background-color: black;
     font-family: IRSANS;
-    background: url(../images/images.jpg) no-repeat center fixed;
+    background: url(../images/pasta4_b294.webp) no-repeat center fixed;
     background-size: cover;
+    
+    
 }
 
 h1 {
@@ -18,13 +20,15 @@ h1 {
 .main-card {
     width: 70%;
     height: 350px;
-    background-color: grey;
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0.03));
     border-radius: 20px;
     position: absolute;
     left: 15%;
     top: 15%;
     padding-top: 5em;
     text-align: center;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
 }
 
 .custom-input {
