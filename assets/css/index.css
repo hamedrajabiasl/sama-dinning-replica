@@ -8,19 +8,19 @@ html {
     font-family: IRSANS;
     background: url(../images/pasta4_b294.webp) no-repeat center fixed;
     background-size: cover;
-    
-    
+
+
 }
 
 h1 {
-    color: yellow;
+    color: white;
     font-family: IRSANS;
 }
 
 .main-card {
     width: 70%;
     height: 350px;
-    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0.03));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.03));
     border-radius: 20px;
     position: absolute;
     left: 15%;
@@ -28,7 +28,7 @@ h1 {
     padding-top: 5em;
     text-align: center;
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .custom-input {
@@ -41,6 +41,8 @@ h1 {
     font-size: 14;
     text-align: center;
     margin-bottom: 30px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
 }
 
 .custom-button {
@@ -50,5 +52,27 @@ h1 {
     box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.7);
     font-family: IRSANS;
     font-size: 14;
-    background-image: linear-gradient(to right, #B3B1F9, #1A1857);
+    color: white;
+    background: linear-gradient(to right, #B3B1F9, #1A1857);
+
+ 
+    transition-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  
+}
+.custom-button:active{
+    transition-duration: 0.1s;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5;
+    /* Firefox */
 }
